@@ -60,3 +60,14 @@ def retrieve_data(request):
     return render(request,'retrieve_data.html',d)
 
 
+def checkbox(request):
+    LTO=Topic.objects.all()
+    d={'topics':LTO}
+    return render(request,'checkbox.html',d)
+
+def radio(request):
+    LTO=Topic.objects.all()
+    d={'topics':LTO}
+    return render(request,'radio.html',d)
+
+
